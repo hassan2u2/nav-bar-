@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/414de25155.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+<style>
+#hi{
+    display: flex;
+    background-color: aliceblue;
+    height: 100px;
+}
+    
+.menu li{
+    text-decoration: none;
+            
+            display: inline-flex;
+            color: white;
+            list-style: none;
+            padding: 10px 20px;
+
+
+}
+#icon{
+    margin-top: 25px;
+    margin-left: 20px;
+    size: 50px;
+}
+
+
+.menu li a{
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    #icon{
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        background: aliceblue;
+        top: 27px;
+      margin-left: -11%;
+    
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px,0px;
+        
+    }
+    .menu ul li a {
+        font-size: 20px;
+        color: rgb(20, 20, 19);
+    }
+    #iconn{
+       
+        text-align: center;
+    }
+  
+   
+   
+   
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div id="hi">
+        <div id="iconn">
+            <i class="fa-solid fa-bars" id="icon"></i>
+        </div>
+    <div class="menu" id="menu">
+        
+        <ul>
+             <li><a href="https://www.foodnetwork.com/">home</a></li>
+            <li><a href="https://www.foodnetwork.com/">contact</a></li>
+            <li><a href="https://www.foodnetwork.com/">privacy</a></li>
+            <li><a href="https://www.foodnetwork.com/">new items</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+   
+
+
+    <script>
+
+            let y=document.getElementById("menu");
+            let x=document.getElementById("icon");
+            y.style.display='none';
+            x.addEventListener('click',function(){
+                y.style.display='block';
+                x.style.display='none'
+             
+
+
+            })
+
+
+        
+    </script>
+    
+</body>
+</html>
